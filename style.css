@@ -199,6 +199,7 @@ nav a {
 
 .blog-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -344,4 +345,12 @@ footer {
 
 
 /** To make responsive  **/
+
+
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+    flex: 100%;
+    }
+}
 
